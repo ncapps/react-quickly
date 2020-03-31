@@ -24,5 +24,12 @@
 - Modify elements using properties
 - Pass properties to child element(s)
 
+## Chapter 3. Introduction to JSX
+- JSX is a JavaScript extension that provides syntactic sugar for function calls and object construction
+- Today, we build highly interactive UIs and JS and HTML are tightly coupled to implement various pieces of functionality
+- JSX is compiled by various *transformers* into standard ECMASCript
+- Don't pass properties individually when your intention is to pass all of them,. Use the spread operator.
+- The spread operator's syntax is similar to the rest parameter's but rest is used in a function definition/declaration, and spread is used in calls and literals
+
 ## Attribution
 React Quickly, Azat Madan, August 2017 - ISBN 9781617293344
