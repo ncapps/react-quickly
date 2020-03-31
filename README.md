@@ -13,5 +13,16 @@
   - *React Core* is a library for building and sharing composable UI components using JavaScript or JSX in an isomorphic/universal manner
   - *ReactDOM* is a library that includes methods for DOM and server-side rendering
 
+## Chapter 2. Baby steps with React
+- *Properties* are a cornerstone of the declarative style that React uses. Think of properties as unchangeaable values within an element.
+- Properties are immutaable within their components. The child element cannot modify its properties
+- Properties closely resemble HTML attributes
+- You can use the same component - but provided with different properties, the elements rendered by the component can be different
+- It's important to know how React works in regular JavaScript events before using JSX
+- You can nest React elements using arguments in `createElement()`
+- Create elements from custom component classes
+- Modify elements using properties
+- Pass properties to child element(s)
+
 ## Attribution
 React Quickly, Azat Madan, August 2017 - ISBN 9781617293344
