@@ -30,6 +30,10 @@
 - JSX is compiled by various *transformers* into standard ECMASCript
 - Don't pass properties individually when your intention is to pass all of them,. Use the spread operator.
 - The spread operator's syntax is similar to the rest parameter's but rest is used in a function definition/declaration, and spread is used in calls and literals
+- Use `className` and `htmlFor` instead of the standard HTML `class` aand `for` attributes
+- The `style` attribute takes a JavaScript object, not a string
+- Use Ternary operators aand IIFE to implement `if`/`else` statements
+
 
 ## Attribution
 React Quickly, Azat Madan, August 2017 - ISBN 9781617293344
