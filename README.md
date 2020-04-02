@@ -34,6 +34,15 @@
 - The `style` attribute takes a JavaScript object, not a string
 - Use Ternary operators aand IIFE to implement `if`/`else` statements
 
+## Chapter 4. Making React interactive with states
+- Properties are immutable in a component, properties only change when the component is re-created by passing new values from a parent component
+- *States* allow you to update views in response to events without re-rendering a component
+- When state changes, only the corresponding parts of views change. This is possible due to the virtual DOM.
+- New values for properties and states can change the UI. New property values come from a parent, new state values come from the component
+- Using stateless components with a handful of stateful components allows for more flexible and simpler designs
+- States are mutable; properties are immutable
+- `{}` is a way to render variables and execute JavaScript in JSX code
+- Function componetns are the preferred way of working with React
 
 ## Attribution
 React Quickly, Azat Madan, August 2017 - ISBN 9781617293344
