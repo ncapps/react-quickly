@@ -44,5 +44,21 @@
 - `{}` is a way to render variables and execute JavaScript in JSX code
 - Function componetns are the preferred way of working with React
 
+## Chapter 5. React component lifecycle events
+- *Mounting events* - Happen when a React element is attached to a DOM node
+- *Updating events* - Happen when a React element is updated as a result of new values of its properties or state
+- *Unmounting events* - Happen when a React element is detached from the DOM
+- A *pure* function is a function that:
+  - Given the same input, will *always* return the same output
+  - Has no side effects (doesn't alter external states)
+  - Doesn't rely on any external state
+- Setting your initial values will help you avoid repetitive checks or bugs later in your code
+- `componentWillMount()` is invoked on both the server and the client, whereas `componentDidMount()` is invoked only on the client
+- Mounting events are used to integrate React with other libraries and to get data from stores or servers
+- Use `shouldComponentUpdate()` to optimize rendering
+- Use `componentWillReceiveProps` to perform a state change with new properties
+- Unmounting events are used for cleanup
+
+
 ## Attribution
 React Quickly, Azat Madan, August 2017 - ISBN 9781617293344
