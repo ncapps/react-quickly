@@ -59,6 +59,25 @@
 - Use `componentWillReceiveProps` to perform a state change with new properties
 - Unmounting events are used for cleanup
 
+## Chapter 6. Handling events in React
+- For attributes that are events names, you use standard W3C DOM event names in camelCase (e.g., `onClick`)
+- The `event` object is an enhance version of a native DOM event object
+- `bind()` is needed so that in the event-handler function, a reference to the instance context is accessible. You don't need to bind the context when using fat arrows (`()=>{}`)
+- React is declarative, you declare an event in the JSX as an attribute (e.g., `onClick={handleSave}`)
+- In React, events are captures at the root (Document)
+- React uses its own special class for *synthetic events*
+- The `target` property of the event object has the DOM node of the object on which the event happened. 
+- You can get the text of an input field from `event.target.value`
+- *Dumb* and *smart* components are *presentational* and *container* respectively
+- You can create custom event listeners using lifecycle events
+- *Orphaned* event handlers are handlers that don't have DOM nodes that created them - this can cause memory leaks
+- `onClick` is for capturing mouse and trackpad clicks
+- The JSX syntax for event listeners is `<a onNAME={FUNCTION} />`
+- Bind event handlers with `bind()` in `constructor()` or in JSX if you want to use `this` in the event handler as the value of the component class instance
+- `componentDidMount()` is triggered only on the browser
+- `componentWillMount()` is triggered only both the browser and the server
+- React supports most the standard HTML DOM events by providing and using synthetic event objects
+- `componentDidMount()` and `componentWillUnmount()` can be used to integrate React with other frameworks and events not supported by React
 
 ## Attribution
 React Quickly, Azat Madan, August 2017 - ISBN 9781617293344
