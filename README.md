@@ -79,5 +79,32 @@
 - React supports most the standard HTML DOM events by providing and using synthetic event objects
 - `componentDidMount()` and `componentWillUnmount()` can be used to integrate React with other frameworks and events not supported by React
 
+## Chapter 7. Working with forms in React
+- To keep internal state and the view in sync, you must:
+  1. Define elements in `render()` using values from `state`
+  2. Capture changes to a form element as they happen using `onChange`
+  3. Update the internal state in the event handler
+  4. New values are saved in `state`, and then the view is updated by a new `render()`
+- *one-way binding* - the state changes views
+- *Controlled components* ensure that the internal component state is always in sync with the view
+- You should wrap input elements that share a common purpose in a `<form>` element
+- According to the HTML5 spec, you should *not* nest forms
+- React supports three events for forms:
+  - `onChange` - Fires when there's a change in any of the form's inputs
+  - `onInput` - Fires for each change in `<textarea>` and `<element>` values. This is *not* recommended
+  - `onSubmit` - Fires when the form is submitted, usually by pressing Enter
+- The most popular naming convention for event handlers is to prefix with the word `handle`
+- Remember: You pass the definition of the function, not its result; and you use curly braces as values of the JSX attributes
+- Special mutable properties are called *interactive properties*. Just four elements `<input>`, `<textarea>`, `<select>`, and `<option>` are special and have the interactive properties
+- Interactive properties:
+  - `value` - Applies to `<input>`, `<textarea>`, and `<select>`
+  - `checked` - Applies to `<input>` with type="checkbox" or type="radio"
+  - `selected` - Applies to `option` (used with `<select>`)
+- In JavaScript, objects are passed and assigned by references. You shouldn't change state directly. To avoid potential conflicts, its better to *clone* the object using `Object.assign()` or object destructuring
+- If you define the value of the attributes `value`, `checked`, or `selected` using strings, properties, or states, then it is considered *controlled*. This is a best practice when working with forms with React
+- Using uncontrolled components with or without capturing changes is a hack and should be avoided
+- React's `<textarea>` uses a `value` attribute, not inner content
+- `this.refs.NAME` is a way to access class references  
+
 ## Attribution
 React Quickly, Azat Madan, August 2017 - ISBN 9781617293344
