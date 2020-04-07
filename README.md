@@ -122,5 +122,9 @@
 - Higher-order components are defined as functions that take another component as an argument. This argument is the component inheriting from the HOC
 - Any HTML or React components nested within a JSX element can be accessed through the `props.children` property of the parent component
 
+## Chapter 9. Menu component
+- Set the `key` attribute when generating lists
+- Use `map()` to create a new array based on the original. It's iterator arguments are `value`, `index`, and `list`
+
 ## Attribution
 React Quickly, Azat Madan, August 2017 - ISBN 9781617293344
