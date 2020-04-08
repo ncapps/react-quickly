@@ -126,5 +126,10 @@
 - Set the `key` attribute when generating lists
 - Use `map()` to create a new array based on the original. It's iterator arguments are `value`, `index`, and `list`
 
+## Chapter 10. Timer component
+- Keep components simple and as close to representational as possible
+- Pass functions as values of properties, not just data
+- Two components can exchange data between each other via a parent
+
 ## Attribution
 React Quickly, Azat Madan, August 2017 - ISBN 9781617293344
