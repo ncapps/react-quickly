@@ -126,10 +126,22 @@
 - Set the `key` attribute when generating lists
 - Use `map()` to create a new array based on the original. It's iterator arguments are `value`, `index`, and `list`
 
-## Chapter 10. Timer component
+## Chapter 11. Timer component
 - Keep components simple and as close to representational as possible
 - Pass functions as values of properties, not just data
 - Two components can exchange data between each other via a parent
 
+## Chapter 12. Webpack
+- Webpack's core focus is optimizing the JavaScript so that it's contained in as few files as possible for a client to request
+- *Code splitting* and *asset hashing* identifies blocks of code that are required only under certain circumstances. They are split out and loaded on demand as an optimization
+- *Webpack* - the bundler tools
+- *Loaders* - Style, CSS, HMR, and Babel/JSX preprocessors
+- *webpack-dev-server* - An Express development server that lets you use HMR
+- ESLint can take predefined rules and make sure your code adheres to the standards defined by the rules
+- npm scripts are great for testing, building, and running the development environment
+- A *hook* is a pattern in which some code is triggered when another event happens
+- 
+
+
 ## Attribution
-React Quickly, Azat Madan, August 2017 - ISBN 9781617293344
+React Quickly, Azat Mardan, August 2017 - ISBN 9781617293344
