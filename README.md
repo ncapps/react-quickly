@@ -140,7 +140,13 @@
 - ESLint can take predefined rules and make sure your code adheres to the standards defined by the rules
 - npm scripts are great for testing, building, and running the development environment
 - A *hook* is a pattern in which some code is triggered when another event happens
-- 
+
+## Chapter 13. React routing
+- You can create a naive routing solution by listening to `hashchange`
+- *React Router* provides the JSX syntax for defining a routing hierarchy: `<Router><Route/></Router>`
+- Nested routes don't have to have nested URLs relative to their parent routes; path and nestedness are independent
+- You can use hash history without tokens by setting `queryKey` to `false`
+- You must include React when using JSX. JSX converts to `React.createElement()` which needs React
 
 
 ## Attribution
