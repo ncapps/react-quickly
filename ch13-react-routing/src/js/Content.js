@@ -1,13 +1,20 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Switch, Route, NavLink } from "react-router-dom";
 
-export default function Content({children}) {
+import About from "./About";
+import Posts from "./Posts";
+import Post from "./Post";
+import Contact from "./Contact";
+
+import { posts } from "../posts";
+
+export default function Content() {
   return (
     <div>
       <h1>Node.University</h1>
       <div>
         <ul>
-          <li>            
+          <li>
             <NavLink to="/about" activeClassName="active">
               About
             </NavLink>
@@ -29,7 +36,21 @@ export default function Content({children}) {
           </li>
         </ul>
       </div>
-      {children}
+
+      <Switch>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path={"/posts/:id"}>
+          <Post posts={posts} />
+        </Route>
+        <Route path="/posts">
+          <Posts posts={posts} />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
+      </Switch>
     </div>
   );
 }

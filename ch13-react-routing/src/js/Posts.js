@@ -1,9 +1,8 @@
 import React from "react";
-import { Link, Route, useRouteMatch, Switch } from "react-router-dom";
-import Post from './Post';
+import { Link, useRouteMatch } from "react-router-dom";
 
 export default function Posts({ posts }) {
-  const { path, url } = useRouteMatch(); 
+  const { url } = useRouteMatch(); 
 
   return (
     <div>
@@ -15,15 +14,6 @@ export default function Posts({ posts }) {
           </li>
         ))}
       </ol>
-
-      {/* <Switch>
-        <Route exact path={path}>
-          <h3>Select a post</h3>
-        </Route>
-        <Route path={`${path}/:id`}>
-          <Post posts={posts}/> 
-        </Route>
-      </Switch> */}
     </div>
   );
 }
