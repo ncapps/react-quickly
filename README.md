@@ -148,6 +148,41 @@
 - You can use hash history without tokens by setting `queryKey` to `false`
 - You must include React when using JSX. JSX converts to `React.createElement()` which needs React
 
+## Chapter 14. Working with data using Redux
+- React is a view layer that's designed to work with *unidirectional data flow*
+- A unidirection data pattern (a.k.a. *one-way binding*) exists when there are no mutable (or two-way) references between concerns
+- *Concerns* are parts with different functionality
+- Views can't modify models directly
+- Unidirectional data flow ensures that for any given input into your components, you'll get the same predictable result: a `render()` expression
+- *Flux* is an architecture pattern for data flow developed by Facebook to be used in React apps.
+- Flux uses unidirectional data flow and aims to eliminate the complexity of MVC-like patterns. Flux is a replacement for MVC.
+- Unidirectional data flow enables better testing and debugging
+- *Redux* is one of the most popular implementations of the Flux architecture
+- Redux is a standalone library that implements a state container
+- The only way to mutate the internal state is to dispatch an action, and actions are in the store
+- The way the data in the store changes is specified by *reducers* that are pure functions. `(state, action) => state` Get a new state by applying an action to the current state
+- This allows for predictability and the ability to rewind actions to previous states
+- Every time you call an action, every reducer is called. Reducers are responsible for changing the data in the store.
+- The action code describes how an action transforms the state into the next state
+- The `redux-actions` library makes reducers more functional
+- The `Provider` component takes care of delivering data from the store to all the connected components, so there's no need to pass properties directly
+- With `react-router`, you can declare a hierarchy of components per browser location
+- You can easily combine multiple reducers with the `combineReducers()` function from `redux`
+- A *reducer*, in Redux, is a function that runs *every time* any action is dispatched
+- Avoid putting API calls into reducers. Reducers should be pure functions with no side effects
+- An *action creator* is a function that returns an action
+- A connected component can access any data from the store in its properties
+- Every time part of the store is updated, all components that depend on that part receive new properties and are re-rendered
+- The `dispatch()` method is a function that takes an action as an argument and sends it into the store
+
+**Summary**
+- Unidirectional data flow provides predictability and ease of maintenance for React apps
+- Flux is the recommended architecture when working with React
+- Redux is the most popular implementation of the Flux architecture
+- Redux's `connect()` lets you access store data and dispatch actions from components
+- A reducer is a file with a reducing function that uses a `switch/case` statement or `handleActions` to apply actions to a new state. The current state and actions are input, the new state is output
+- Redux `combineReducers` merges multiple reducers, letting you split the code for those reducers into various modules
+
 
 ## Attribution
 React Quickly, Azat Mardan, August 2017 - ISBN 9781617293344
