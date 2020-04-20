@@ -183,6 +183,20 @@
 - A reducer is a file with a reducing function that uses a `switch/case` statement or `handleActions` to apply actions to a new state. The current state and actions are input, the new state is output
 - Redux `combineReducers` merges multiple reducers, letting you split the code for those reducers into various modules
 
+## Chapter 15. GraphQL with Redux
+- GraphQL is a reliable way to provide data to the front end. It eliminates a lot of duplicate back-end code.
+- To enable the browser history and hash-less URL with React Router, use `sendFile()` in the * Express route to server index.html
+- To use Express not just as a data provider/API but as a static web server, use express.static with app.use()
+- GraphQL's URL structure is `/q?query=...` where query has the value of your data query
+
+## Chapter 16. Testing
+- Code isn't an asset, it's a liability. Your goal is to make it as easy to maintain as possible
+- Using test-driven/behavior-driven development can make maintenance easier
+- Unit testing should make up ~70% of your overall tests
+- Service (integration) tests should make up ~20% of your overall tests
+- UI (acceptance) tests should make up ~10% of your overall tests
+- All tests should be automated
+
 
 ## Attribution
 React Quickly, Azat Mardan, August 2017 - ISBN 9781617293344
